@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    
+  </head>
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <body>
+    <section>
+      <div class="section-1 lg:h-[450px] bg-emerald-300 mt-[30px] gap-x-20
+      items-center justify-center lg:flex">
+        <div class="text-center">
+          <h1 class="text-center  mb-6">---SALE FEVER---</h1>
+          <h1 class="text-3xl text-center lg:text-left mb-6">Purchase TK 200 or<br>
+          above & get <span class="text-purple-700">20% off</span></h1>               
+          <p class="text-center">Use Promo Code<button class=" bg-blue-500 w-20 rounded">SELL200</button></p>           
+        </div>
+        <div >
+          <img class="ml-56 md:ml-80 lg:ml-7 lg:h-[470px] w-[303px] lg:w-[443px]" src="images/p1.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-2 mt-[50px] gap-6 lg:flex items-center justify-center gap-x-12 ">
+        <div class="left-side-container  grid gap-6 md:grid-cols-2  md:ml-32 lg:ml-12 lg:grid-cols-3 ">
+          
+            <div class="card ml-32 md:ml-0.5 lg:ml-0.5 w-[470px] md:w-52 lg:w-52 h-72 bg-green-100 ">
+              <figure>
+                <img class="mt-7" 
+                  src="images/prod1.png"
+                />
+              </figure>
+              <div class="text-center ">
+                <h5>home cooker</h5>
+                <div class="rating rating-sl rating-half justify-center">
+                  <input type="radio" name="rating-10.1" class="rating-hidden" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <h6>price: 50 Tk</h6>
+                <button onclick="buyProduct(this)" class="btn box-btn">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="card ml-32 md:ml-0.5 lg:ml-0.5 w-[470px] md:w-52 lg:w-52 h-72 bg-green-100 ">
+              <figure>
+                <img class="mt-7" 
+                  src="images/prod2.png"
+                />
+              </figure>
+              <div class="text-center ">
+                <h5>home cooker</h5>
+                <div class="rating rating-sl rating-half justify-center">
+                  <input type="radio" name="rating-10.1" class="rating-hidden" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <h6>price: 250 Tk</h6>
+                <button onclick="buyProduct(this)" class="btn box-btn">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="card ml-32 md:ml-0.5 lg:ml-0.5 w-[470px] md:w-52 lg:w-52 h-72 bg-green-100 ">
+              <figure>
+                <img class="mt-7" 
+                  src="images/prod3.png"
+                />
+              </figure>
+              <div class="text-center ">
+                <h5>home cooker</h5>
+                <div class="rating rating-sl rating-half justify-center">
+                  <input type="radio" name="rating-10.1" class="rating-hidden" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <h6>price: 75 Tk</h6>
+                <button onclick="buyProduct(this)" class="btn box-btn">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="card ml-32 md:ml-0.5 lg:ml-0.5 w-[470px] md:w-52 lg:w-52 h-72 bg-green-100 ">
+              <figure>
+                <img class="mt-7" 
+                  src="images/prod4.png"
+                />
+              </figure>
+              <div class="text-center ">
+                <h5>home cooker</h5>
+                <div class="rating rating-sl rating-half justify-center">
+                  <input type="radio" name="rating-10.1" class="rating-hidden" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <h6>price: 50 Tk</h6>
+                <button onclick="buyProduct(this)" class="btn box-btn">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="card ml-32 md:ml-0.5 lg:ml-0.5 w-[470px] md:w-52 lg:w-52 h-72 bg-green-100 ">
+              <figure>
+                <img class="mt-7" 
+                  src="images/prod5.png"
+                />
+              </figure>
+              <div class="text-center ">
+                <h5>home cooker</h5>
+                <div class="rating rating-sl rating-half justify-center">
+                  <input type="radio" name="rating-10.1" class="rating-hidden" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <h6>price: 50 Tk</h6>
+                <button onclick="buyProduct(this)" class="btn box-btn">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+
+            <div class="card ml-32 md:ml-0.5 lg:ml-0.5 w-[470px] md:w-52 lg:w-52 h-72 bg-green-100 ">
+              <figure>
+                <img class="mt-7" 
+                  src="images/prod6.png"
+                />
+              </figure>
+              <div class="text-center ">
+                <h5>home cooker</h5>
+                <div class="rating rating-sl rating-half justify-center">
+                  <input type="radio" name="rating-10.1" class="rating-hidden" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10.1" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <h6>price: 50 Tk</h6>
+                <button onclick="buyProduct(this)" class="btn box-btn">
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+            
+          
+
+          
+
+
+        </div>
+
+
+
+
+        
+      
+    
+
+        <div class="right-side  mt-80 text-center">
+          <div class="bg-green-100 rounded h-24 lg:h-24 w-full lg:w-52 lg:-mt-72">
+            <h1 class="text-center  lg:-ml-12 ">Have copun?</h1>
+            <input  class="mt-5 text-center ml-44 md:ml-72 lg:ml-4 rounded w-72 lg:w-28"  placeholder="copun code" id="copun-code">
+            <button class="bg-blue-500 rounded" id="promo" onclick="promo(this)">Apply</button>
+          </div>
+
+          <div class="selected-items " id="product-price"></div>
+      
+          <div class="mt-7 text-center lg:text-left w-full lg:shadow-xl bg-gray-400">
+            <h6 class="text-base">Total price: <span id="totalPrice">00</span>TK</h6>
+            <h6>Discount:<span id="discount">00</span>TK</h6>
+            <h6>Total:<span>00</span>TK</h6>   
+          </div>
+
+          <button class=" mt-5 mb-10 h-10  rounded-lg w-full md:w-full lg:w-full btn-primary " onclick="openPopup()">Make Purchase</button>
+          <div class="popup invisible " id="popup">
+            <img src="images/congo.png">
+            <h1>Congratulations</h1>
+            <h3>Your Purchase the product</h3>
+            <button onclick="closePopup()">Home</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
